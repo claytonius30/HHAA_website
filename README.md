@@ -1,2 +1,13 @@
-# HHAA_website
-My analysis and revisions to Helena Hunters &amp; Anglers Association website
+# Helena Hunters & Anglers Association website
+
+My analysis and revisions to [Helena Hunters &amp; Anglers Association](https://helenahuntersandanglers.org).
+
+Challenge: For my Senior Capstone class I was tasked with completing a final project.
+
+Context: Helena Hunters & Anglers Association is a local non-profit in Helena, MT that provides education and advocates for ethical hunting, public land wildlife habitat and functional ecosystems. My mom is a board member and I was given the opportunity to take over maintenance and learn WordPress-the content management system used for the website. Web hosting is done through GoDaddy, which uses cPanel (control panel) to manage WordPress account administration.
+
+Action: When I first had the chance to log into the account, the current WordPress version was not up to date and there were several plugins (Events Calendar, SEO, etc.) that were also outdated. Before performing the updates, I wanted to make sure the website was backed up, which I learned was also done through cPanel. Once learning the update process, I proceeded to become familiar with the WordPress user interface.
+
+Result: A major learning curve was understanding that making edits to any code in WordPress was not as straightforward as it seemed. One of my first obstacles was trying to fix the alignment of the text that appears next to the logo in the navigation header. Using dev tools from my browser when viewing the site away from WordPress, I quickly identified that for the landing page, the text was inside an H1 tag, but everywhere else, this text was contained in a span tag.. Thinking I could just locate the nav header file and fix the issue was my problem. I discovered that I needed to use the Theme File Editor for Go (the theme for the website) to locate a specific PHP file that had a condition statement causing all pages except the home page to put the header text in a span tag.. This is an example of what is involved when using a CMS instead of creating and managing your own HTML and CSS files; much of the granular control is given up and you are expected to use the tools they provide.
+
+Reflection: The biggest takeaway for me using WordPress, was to just take the time to learn the layout and all the tools they provide to make edits and modifications. The average person isn't really expected to know the ins and outs of HTML, CSS, JavaScript, or any other web development languages because WordPress's UI handles interactions with the underlying code for you. Although it was frustrating at first not being able to make simple changes to the files themselves, after becoming familiar with navigating WordPress and accepting the way it manages website content, getting work done became much easier.
